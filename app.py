@@ -6,6 +6,6 @@ from infra.infra_stack import InfraStack
 
 
 app = core.App()
-InfraStack(app, "infra")
+InfraStack(app, "infra", env={'region': 'eu-west-1'})
 
 app.synth()
